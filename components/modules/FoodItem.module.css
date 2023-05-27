@@ -15,7 +15,6 @@
 }
 .discount {
   position: absolute;
-  /* z-index: ; */
   padding: 5px 10px;
   border-top-left-radius: 15px;
   margin: 3px;

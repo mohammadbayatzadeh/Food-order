@@ -1,0 +1,144 @@
+.container {
+  width: 100%;
+  margin: 70px;
+}
+
+.column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.container h2 {
+  font-size: 2em;
+  font-weight: 700;
+  border-bottom: 4px solid rgb(0, 255, 98);
+  width: fit-content;
+  margin-bottom: 30px;
+}
+.container h4 {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: rgb(0, 255, 98);
+  margin: 70px 0 20px 0;
+}
+.location {
+  color: gray;
+  margin-bottom: 50px;
+}
+.image {
+  width: 300px;
+  border-radius: 7px;
+  margin-right: 10px;
+}
+.name {
+  font-size: 1em;
+  font-weight: 800;
+  color: rgba(0, 255, 98, 1);
+}
+.introduction {
+  text-align: justify;
+  color: gray;
+  margin: 50px 0;
+}
+
+.details li {
+  display: flex;
+  padding: 5px;
+}
+.details li::before {
+  content: "\2022";
+  color: rgba(0, 255, 98, 1);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+.details p {
+  font-weight: 700;
+}
+.details span {
+  color: gray;
+  padding: 0 7px;
+}
+
+.ingredients p {
+  padding: 5px;
+  font-weight: 700;
+  list-style: red;
+}
+.ingredients li {
+  display: flex;
+}
+.ingredients li::before {
+  content: "\2022";
+  color: rgba(0, 255, 98, 1);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.recipe li {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  background-color: green;
+  background: linear-gradient(90deg, green 0%, rgba(2, 0, 36, 0) 100%);
+  padding: 0 5px;
+}
+.recipe li:first-child {
+  border-top-left-radius: 7px;
+}
+.recipe li:last-child {
+  border-bottom-left-radius: 7px;
+}
+.recipe li:nth-child(even) {
+  background-color: rgba(0, 255, 98, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 98, 1) 0%,
+    rgba(2, 0, 36, 0) 100%
+  );
+}
+.recipe li span {
+  font-size: 3em;
+  margin-right: 10px;
+}
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 255, 98, 1);
+  margin-top: 50px;
+  font-size: 1em;
+  border-radius: 7px;
+  transition: all 0.5s ease;
+}
+
+.button:hover {
+  background-color: green;
+}
+@media (max-width: 1000px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .recipe li {
+    width: 100%;
+  }
+}

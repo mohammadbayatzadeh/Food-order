@@ -3,11 +3,11 @@ import Dollar from "../icons/Dollar";
 import Location from "../icons/Location";
 import styles from "./FoodItem.module.css";
 
-function FoodItem({ id, name, details, price, image, discount }) {
+function FoodItem({ id, name, details, price, discount }) {
   return (
     <div className={styles.container}>
       {discount > 0 && <span className={styles.discount}>{discount} %</span>}
-      <img src={`/images/${image}.jpeg`} />
+      <img src={`/images/${id}.jpeg`} alt={name} />
       <div className={styles.row}>
         <h3>{name}</h3>
         <Location />

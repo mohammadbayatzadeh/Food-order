@@ -7,7 +7,7 @@ function Layout({ children }) {
       <div className={styles.layer}>
         <header className={styles.header}>
           <h1 className={styles.logo}>
-            <Link href="/">FOOTORDER</Link>
+            <Link href="/">FOODORDER</Link>
           </h1>
           <input type="checkbox" id="menu-toggle" className={styles.checkbox} />
           <label className={styles.hamburger} htmlFor="menu-toggle">
@@ -24,7 +24,7 @@ function Layout({ children }) {
 
       <div className={styles.container}>{children}</div>
       <footer className={styles.footer}>
-        <p>Next.js Course</p>
+        <p>Next.js Project</p>
       </footer>
     </div>
   );
