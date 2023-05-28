@@ -65,8 +65,8 @@
     {
       "id": 3,
       "name": "Shakshuka",
-      "price": 9,
-      "discount": 0,
+      "price": 10,
+      "discount": 30,
       "introduction": "Claimed as one of their own throughout North Africa and the Middle East, untangling the web of where shakshuka is from is simply impossible. All we know is that it's an incredibly tasty and filling dish that's become a popular breakfast and brunch meal throughout the world. Literally translating as a mixture, it's usually cooked by reducing down tomatoes, onions and a range of spices before the eggs are poached on top.",
       "details": [
         { "Cuisine": "Middle Eastern" },
@@ -279,8 +279,8 @@
     {
       "id": 9,
       "name": "Pho",
-      "price": 9,
-      "discount": 0,
+      "price": 18,
+      "discount": 40,
       "introduction": "This warm, comforting noodle dish has taken the world by storm and rightly so. Its apparent simplicity hides complex flavours that are at once unctuous and refreshing. Born in northern Vietnam in the late 19th century, pho’s development was influenced by Chinese and French cooking, mirroring the history of the country. Today, it is a uniquely Vietnamese offering that you won’t have to go far to find, wherever you are in the world.",
       "details": [
         { "Cuisine": "Vietnamese" },

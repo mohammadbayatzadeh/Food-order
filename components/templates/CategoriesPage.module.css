@@ -1,0 +1,54 @@
+.container {
+  width: 100%;
+  margin: 70px;
+}
+.container h2 {
+  font-size: 2em;
+  font-weight: 700;
+  border-bottom: 4px solid green;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+.container select {
+  border: none;
+  outline: none;
+  background-color: white;
+  padding: 5px 7px;
+  font-size: 0.8em;
+  color: green;
+  font-weight: 600;
+  margin-right: 10px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 4px 0px black;
+  -webkit-box-shadow: 2px 2px 4px 0px black;
+  -moz-box-shadow: 2px 2px 4px 0px black;
+}
+.container button {
+  outline: none;
+  background-color: green;
+  padding: 5px 7px;
+  font-weight: 600;
+  color: white;
+  font-size: 0.8em;
+  border-radius: 5px;
+  text-align: center;
+}
+.container button:hover {
+  background-color: greenyellow;
+  transition: all 0.5s ease;
+}
+.buttons {
+  margin-bottom: 30px;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.image{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

@@ -1,7 +1,6 @@
 import DetailsPage from "@/components/templates/DetailsPage";
 
 function FoodDetails({ data }) {
-  console.log(data);
   return <DetailsPage {...data} />;
 }
 
@@ -37,7 +36,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       data,
-      revalidate: 10, //second
     },
+    revalidate: 10, //second
   };
 }

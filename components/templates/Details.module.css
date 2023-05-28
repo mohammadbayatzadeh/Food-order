@@ -26,14 +26,14 @@
 .container h2 {
   font-size: 2em;
   font-weight: 700;
-  border-bottom: 4px solid rgb(0, 255, 98);
+  border-bottom: 4px solid green;
   width: fit-content;
   margin-bottom: 30px;
 }
 .container h4 {
   font-size: 1.8em;
   font-weight: 700;
-  color: rgb(0, 255, 98);
+  color: green;
   margin: 70px 0 20px 0;
 }
 .location {
@@ -49,6 +49,9 @@
   font-size: 1em;
   font-weight: 800;
   color: rgba(0, 255, 98, 1);
+}
+.off{
+  color: red;
 }
 .introduction {
   text-align: justify;
@@ -140,5 +143,6 @@
   }
   .recipe li {
     width: 100%;
+    font-size: .8em;
   }
 }

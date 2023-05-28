@@ -12,7 +12,7 @@ export async function getStaticProps() {
   return {
     props: {
       data,
-      revalidate: 10, //second
     },
+    revalidate: 10, //second
   };
 }

@@ -5,7 +5,7 @@
 .container h2 {
   font-size: 2em;
   font-weight: 700;
-  border-bottom: 4px solid rgb(0, 255, 98);
+  border-bottom: 4px solid green;
   width: fit-content;
   margin-bottom: 30px;
 }

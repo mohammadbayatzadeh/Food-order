@@ -25,7 +25,14 @@ function DetailsPage({
           </span>
           <div className={styles.row}>
             <Dollar />
-            <span className={styles.price}>{price} $</span>
+            {discount > 0 ? (
+              <p className={styles.off}>
+                {(price - (price * discount) / 100).toFixed(1)} $ ({discount}%
+                off)
+              </p>
+            ) : (
+              <p>{price} $</p>
+            )}
           </div>
         </div>
       </div>

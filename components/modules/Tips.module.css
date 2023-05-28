@@ -7,7 +7,7 @@
   font-size: 1.8em;
   font-weight: 700;
   margin-bottom: 20px;
-  color: rgb(0, 255, 98);
+  color: green;
 }
 .container ol {
   list-style: none;
@@ -22,7 +22,7 @@
 .container li:before {
   margin-right: 10px;
   content: counter(item);
-  background: rgb(0, 255, 98);
+  background: green;
   border-radius: 100%;
   color: white;
   width: 1.2em;
