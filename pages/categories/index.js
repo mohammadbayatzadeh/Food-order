@@ -12,11 +12,10 @@ export async function getServerSideProps(context) {
     query: { difficulty, time },
   } = context;
 
-  const res = await fetch("http://localhost:8000/data");
+  const res = await fetch(`${process.env.BASE_URL}/data`);
   const data = await res.json();
 
   const filteredData = data.filter((item) => {
-
     const difficultyResult = item.details.filter(
       (detail) => detail.Difficulty === difficulty
     );
