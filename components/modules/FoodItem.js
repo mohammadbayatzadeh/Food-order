@@ -8,7 +8,7 @@ function FoodItem({ id, name, details, price, discount }) {
   return (
     <div className={styles.container}>
       {discount > 0 && <span className={styles.discount}>{discount} %</span>}
-      <Image width={200} height={100} src={`/images/${id}.jpeg`} alt={name} />
+      <Image width={300} height={200} src={`/images/${id}.jpeg`} alt={name} />
       <div className={styles.row}>
         <h3>{name}</h3>
         <Location />

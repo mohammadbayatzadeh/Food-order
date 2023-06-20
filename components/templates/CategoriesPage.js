@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./CategoriesPage.module.css";
 import { useRouter } from "next/router";
 import FoodItem from "../modules/FoodItem";
+import Image from "next/image";
 
 function CategoriesPage({ data }) {
   const router = useRouter();
@@ -44,7 +45,7 @@ function CategoriesPage({ data }) {
           data.map((item) => <FoodItem key={item.id} {...item} />)
         ) : (
           <div className={styles.image}>
-            <img src="/images/search.png" />
+            <Image src="/images/search.png" width={1000} height={700} alt="seatchIcon" />
           </div>
         )}
       </div>

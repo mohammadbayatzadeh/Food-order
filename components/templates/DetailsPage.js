@@ -2,6 +2,7 @@ import Link from "next/link";
 import Dollar from "../icons/Dollar";
 import Location from "../icons/Location";
 import styles from "./Detailspage.module.css";
+import Image from "next/image";
 
 function DetailsPage({
   id,
@@ -17,7 +18,7 @@ function DetailsPage({
     <div className={styles.container}>
       <h2>Menu</h2>
       <div className={styles.banner}>
-        <img src={`/images/${id}.jpeg`} alt={name} className={styles.image} />
+        <Image src={`/images/${id}.jpeg`} alt={name} className={styles.image} width={5000} height={200} />
         <div className={styles.column}>
           <h3 className={styles.name}>{name}</h3>
           <span className={styles.location}>

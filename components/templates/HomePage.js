@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Banner from "../modules/Banner";
 import Definition from "../modules/Definition";
 import Features from "../modules/Features";

@@ -17,7 +17,13 @@ function Banner() {
         </p>
         <Link href="/menu">See All</Link>
       </div>
-      <Image width={700} height={400} src="/images/banner.png" className={styles.image} />
+      <Image
+        width={700}
+        height={400}
+        src="/images/banner.png"
+        className={styles.image}
+        alt="Food Order"
+      />
     </div>
   );
 }

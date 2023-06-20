@@ -9,7 +9,7 @@ function FoodDetails({ data }) {
   return (
     <>
       <Head>
-        <title>{data.name}</title>
+        <title>{data.name} recipe</title>
         <meta name="description" content={data.introduction} />
       </Head>
       <DetailsPage {...data} />;
@@ -38,18 +38,22 @@ export async function getStaticProps(context) {
   const {
     params: { FoodID },
   } = context;
-  const res = await fetch(`${process.env.BASE_URL}/data/${FoodID}`);
-  const data = await res.json();
+  try {
+    const res = await fetch(`${process.env.BASE_URL}/data/${FoodID}`);
+    const data = await res.json();
 
-  if (!data.name) {
+    if (!data.name) {
+      return {
+        notFound: true,
+      };
+    }
     return {
-      notFound: true,
+      props: {
+        data,
+      },
+      revalidate: 10, //second
     };
+  } catch (err) {
+    return { notFound: true };
   }
-  return {
-    props: {
-      data,
-    },
-    revalidate: 10, //second
-  };
 }
