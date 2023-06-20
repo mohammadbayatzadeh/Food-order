@@ -1,8 +1,16 @@
 import CategoriesPage from "@/components/templates/CategoriesPage";
+import Head from "next/head";
 import React from "react";
 
 function Categoreis({ data }) {
-  return <CategoriesPage data={data} />;
+  return (
+    <>
+      <Head>
+        <title>category</title>
+      </Head>
+      <CategoriesPage data={data} />;
+    </>
+  );
 }
 
 export default Categoreis;

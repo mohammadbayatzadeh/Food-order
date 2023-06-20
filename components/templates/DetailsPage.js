@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Dollar from "../icons/Dollar";
 import Location from "../icons/Location";
-import styles from "./Details.module.css";
+import styles from "./Detailspage.module.css";
 
 function DetailsPage({
   id,

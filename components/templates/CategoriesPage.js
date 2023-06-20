@@ -8,8 +8,6 @@ function CategoriesPage({ data }) {
   const [query, setQuery] = useState({ difficulty: "", time: "" });
 
   useEffect(() => {
-    console.log("hi");
-    console.log(router.query);
     setQuery(router.query);
   }, []);
   const changeHandler = (e) => {

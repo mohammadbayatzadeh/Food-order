@@ -1,7 +1,20 @@
 import DetailsPage from "@/components/templates/DetailsPage";
+import Head from "next/head";
+import { useRouter } from "next/router";
 
 function FoodDetails({ data }) {
-  return <DetailsPage {...data} />;
+  const router = useRouter();
+
+  if (router.isFallback) return <h1>Loading ...</h1>;
+  return (
+    <>
+      <Head>
+        <title>{data.name}</title>
+        <meta name="description" content={data.introduction} />
+      </Head>
+      <DetailsPage {...data} />;
+    </>
+  );
 }
 
 export default FoodDetails;
@@ -17,7 +30,7 @@ export async function getStaticPaths() {
   }));
   return {
     paths,
-    fallback: "blocking",
+    fallback: true,
   };
 }
 

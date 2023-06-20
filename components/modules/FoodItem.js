@@ -2,12 +2,13 @@ import Link from "next/link";
 import Dollar from "../icons/Dollar";
 import Location from "../icons/Location";
 import styles from "./FoodItem.module.css";
+import Image from "next/image";
 
 function FoodItem({ id, name, details, price, discount }) {
   return (
     <div className={styles.container}>
       {discount > 0 && <span className={styles.discount}>{discount} %</span>}
-      <img src={`/images/${id}.jpeg`} alt={name} />
+      <Image width={200} height={100} src={`/images/${id}.jpeg`} alt={name} />
       <div className={styles.row}>
         <h3>{name}</h3>
         <Location />
